@@ -27,5 +27,9 @@ falso = False
 print(type(falso))
 
 
-# constantes van en mayusculas por buena practica
-# python no reconoce constantes
+
+# para crear variables globales
+# no se pueden inicializar en su creacion ej:(global nombre = "valor")
+global varGlobal
+varGlobal = "valor"
+print(varGlobal)
