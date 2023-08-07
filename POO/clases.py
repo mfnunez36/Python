@@ -16,6 +16,27 @@ print(type(ObjetoFuncion))
 
 
 
+# Self
+# self se utiliza para englobar los atributos a nuestra clase
+# self se transforma en el contexto de si mismo con self podemos acceder a sus atributos
+class SegundaClase():
+    atributo1 = 'valor1'
+    atributo2 = 'valor2'
+    
+    def cambiarAtributo(self):
+        self.atributo1 = "nuevo valor1"
+        
+
+# creamos (instanciamos) la clase SegundaClase   
+clase2 = SegundaClase()
+print("marca antes de cambiar es: ", clase2.atributo1)
+
+# ejecutamos su metodo
+print(clase2.cambiarAtributo())
+
+print("atributo1 nuevo es: ", clase2.atributo1)
+
+
 
 # Atributos inicializados
 class Fabrica():
@@ -105,33 +126,4 @@ class Fabrica4():
 # creamos (instanciamos) la clase Fabrica4 
 # le pasamos sus parametros dentro del parentesis
 fabrica4 = Fabrica4('Marca Fab3', '1990')
-print(fabrica4)
-
-
-
-
-
-
-# Self
-# self se utiliza para englobar los atributos a nuestra clase
-# self se transforma en el contexto de si mismo con self podemos acceder a sus atributos
-class Fabrica5():
-    marca = 'La Marca'
-    anio_inicio = '1800'
-    
-    def cambiarMarca(self):
-        self.marca = "Mi nueva marca"
-        
-
-# creamos (instanciamos) la clase Fabrica5   
-fabrica5 = Fabrica5()
-print("marca antes de cambiar es: ", fabrica5.marca)
-
-# ejecutamos su metodo
-print(fabrica5.cambiarMarca())
-
-print("marca nueva es: ", fabrica4.marca)
-
-
-
-    
+print(fabrica4)   
