@@ -18,7 +18,7 @@ print(type(ObjetoFuncion))
 
 # Self
 # self se utiliza para englobar los atributos a nuestra clase
-# self se transforma en el contexto de si mismo con self podemos acceder a sus atributos
+# self se transforma en el contexto de si mismo / con self podemos acceder a sus atributos
 class SegundaClase():
     atributo1 = 'valor1'
     atributo2 = 'valor2'
